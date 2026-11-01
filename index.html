@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Elegancia Urbana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Boutique Elegancia Urbana</h1>
+    </header>
+
+    <main class="container">
+        <p>Bienvenidos a la mejor tienda de moda actual. Descubre nuestra colección exclusiva diseñada para destacar tu estilo en toda ocasión.</p>
+         Esta venta de ropa esta centrada en la muestra y venta de ropa de calidad y buen precio con el objetivo de proporcionar y negociar combos de ropa sin ningun tipo de riegos en la entrega y asegurar una buena compra, utilizando el metodo de pago al momento de la entrega sin robo o estafa al cliente. 
+
+
+        <!-- Galería de imágenes referente al negocio colocadas después del primer párrafo -->
+        
+        <div class="galeria-imagenes">
+            <img src="https://unsplash.com" alt="Interior Tienda Ropa">
+            <img src="https://unsplash.com" alt="Ropa de Moda">
+        </div>
+
+        <!-- Catálogo de Productos -->
+        <section class="catalogo">
+            <h2>Nuestra Colección</h2>
+            <div class="productos-grid">
+                <div class="producto" data-id="1" data-nombre="Camisa Slim Fit" data-precio="35.00">
+                    <h3>Camisa Slim Fit</h3>
+                    <p class="precio">$35.00</p>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="2" data-nombre="Pantalón Denim Premium" data-precio="50.00">
+                    <h3>Pantalón Denim Premium</h3>
+                    <p class="precio">$50.00</p>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="3" data-nombre="Chaqueta de Cuero" data-precio="85.00">
+                    <h3>Chaqueta de Cuero</h3>
+                    <p class="precio">$85.00</p>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabla de Movimientos / Historial de Ventas -->
+        <section class="movimientos">
+            <h2>Registro de Movimientos de Compra</h2>
+            <div class="tabla-contenedor">
+                <table id="tabla-compras">
+                    <thead>
+                        <tr>
+                            <th>ID Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio Unitario</th>
+                            <th>Fecha/Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-movimientos">
+                        <!-- Los movimientos se insertarán dinámicamente con JS -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="resumen-total">
+                <strong>Total Acumulado: $<span id="total-precio">0.00</span></strong>
+          
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
